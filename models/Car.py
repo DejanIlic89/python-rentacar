@@ -7,7 +7,6 @@
 # __production_year
 
 class Car:
-
     VALID_CARS = {
         "Audi": [
             {"model": "A4", "production_year": 2004},
@@ -70,9 +69,3 @@ class Car:
         if self.__model is not None and self.__production_year is not None:
             raise ValueError("Production year cannot be set twice")
         self.__production_year = year
-
-
-audi = Car()
-audi.brand = "Audi"
-audi.model = "A4"
-print(audi.production_year)
